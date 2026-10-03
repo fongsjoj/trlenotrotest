@@ -1,0 +1,36 @@
+@Metadata.layer: #CORE
+@UI:{ headerInfo:{ typeName: 'Employee',
+                   typeNamePlural: 'Employees',
+                   title: { type:#STANDARD,
+                   label: 'Employees',
+                   value: 'EmployeeName'
+                           }
+                   } }
+annotate view z_c_empl_g17366 with
+{
+  @UI.facet  : [ { id: 'Employees',
+                       purpose: #STANDARD,
+                       type: #IDENTIFICATION_REFERENCE,
+                       label: 'Employee' } ]
+
+  @UI: { lineItem: [{ position: 10, label: 'Employee Number', importance: #HIGH  }] }
+  EmployeeNumber;
+  @UI: { lineItem: [{ position: 10, label: 'Employee Name', importance: #HIGH  }] }
+  EmployeeName;
+  @UI: { lineItem: [{ position: 20, label: 'Department', importance: #HIGH  }] }
+  EmployeeDepartment;
+  @UI: { lineItem: [{ position: 30, label: 'Status', importance: #HIGH  }] }
+  EmployeeStatus;
+  @UI: { lineItem: [{ position: 40, label: 'Job Code', importance: #MEDIUM  }] }
+  JobCode;
+  @UI: { lineItem: [{ position: 50, label: 'Job Title', importance: #MEDIUM  }] }
+  JobTitle;
+  @UI: { lineItem: [{ position: 60, label: 'Email', importance: #HIGH  }] }
+  Email;
+  @UI: { lineItem: [{ position: 70, label: 'Start Date', importance: #LOW  }] }
+  StartDate;
+  @UI: { lineItem: [{ position: 80, label: 'End Date', importance: #LOW  }] }
+  EndDate;
+
+
+}
